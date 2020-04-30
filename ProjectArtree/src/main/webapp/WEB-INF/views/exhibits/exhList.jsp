@@ -169,7 +169,7 @@
 	    
 	    // 스크롤이 최하단 으로 내려가면 리스트를 조회하고 page를 증가시킨다.
 		$(window).scroll(function(){
-		    if($(window).scrollTop() == $(document).height() - $(window).height()){
+		    if($(window).scrollTop() >= $(document).height() - $(window).height()){
 		    	if( $("#count").text() != $("#tc").text() ){
 			    	 page++; 
 			    	 getExhList(page, sessionStorage.getItem("type"), sessionStorage.getItem("loca"));

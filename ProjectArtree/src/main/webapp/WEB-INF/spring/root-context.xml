@@ -8,11 +8,19 @@
 
 	<!-- ====  myBatis(JDBC)설정 연결문자열 설정하기  ==== 
 	나중에 공유 ip를 사용하게 되면 아래의 localhost부분, username 수정
-	-->
+	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<property name="url" value="jdbc:oracle:thin:@192.168.50.65:1521:xe" />
 		<property name="username" value="artree" />
+		<property name="password" value="eclass" />
+	</bean>
+	-->
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="kimtree" />
 		<property name="password" value="eclass" />
 	</bean>
 
